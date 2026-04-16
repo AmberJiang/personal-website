@@ -25,7 +25,7 @@ function App() {
       <main className="flex-1 bg-white">
         <section className="mx-auto flex min-h-0 max-w-[1386px] flex-col items-stretch gap-[5vw] px-[5vw] py-[6vw] md:flex-row md:items-center md:justify-start md:gap-[5vw] md:px-[6vw] md:py-[8vw] lg:h-[865px] lg:flex-row lg:gap-[64px] lg:py-24 lg:pl-[120px] lg:pr-6">
           {/* Illustration */}
-          <div className="flex w-full justify-center md:w-[48%] md:max-w-[682px] md:shrink-0 lg:w-auto lg:max-w-none">
+          {/* <div className="flex w-full justify-center md:w-[48%] md:max-w-[682px] md:shrink-0 lg:w-auto lg:max-w-none">
             <div className="aspect-[682/459.4] w-full max-w-full overflow-hidden rounded-2xl bg-white lg:h-[459.4px] lg:w-[682px]">
               <img
                 src="/bio.jpg"
@@ -35,7 +35,7 @@ function App() {
                 className="h-full w-full rounded-[16px] object-cover"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Bio text */}
           <div className="flex w-full min-w-0 flex-col items-start text-left md:w-[48%] md:max-w-[400px] lg:h-[145px] lg:min-w-[400px] lg:w-[400px] lg:shrink-0 lg:pl-10">
