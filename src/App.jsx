@@ -54,7 +54,7 @@ function App() {
               className="button-27 mt-1.5"
               style={{ width: '90px', height: '21px', minHeight: '21px' }}
               onClick={() => {
-                window.open('/NanyanJiang江南燕_Resume.pdf', '_blank', 'noopener,noreferrer')
+                window.open('/NanyanJiang_Resume_2026.pdf', '_blank', 'noopener,noreferrer')
               }}
             >
               VIEW CV
