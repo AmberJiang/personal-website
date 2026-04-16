@@ -64,7 +64,7 @@ function App() {
 
         <section className="mx-auto max-w-[1386px] pb-[4vw] px-[5vw] md:pb-12 md:px-[6vw] lg:pb-12 lg:pl-[107.5px] lg:pr-6">
           <p className="text-left text-xs tracking-[0.14em] text-[#9CA3AF]">
-            Last updated March 4, 2026
+            Last updated {__LAST_UPDATED_DISPLAY__}
           </p>
         </section>
       </main>
