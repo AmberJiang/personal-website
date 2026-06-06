@@ -18,7 +18,7 @@ function Ongoing() {
       <section className="mx-auto max-w-[1386px] px-[5vw] py-[6vw] text-left md:px-[6vw] md:py-[8vw] lg:py-24 lg:pl-[120px] lg:pr-6">
         <div className="flex flex-col gap-[8vw] md:gap-16">
           {ongoingProjects.map((project) => (
-            <article key={project.name} className="border-t border-[#E5E7EB] pt-6 text-left md:pt-8">
+            <article key={project.name} className="text-left">
               <div className="flex flex-wrap items-center gap-3">
                 {project.url ? (
                   <a

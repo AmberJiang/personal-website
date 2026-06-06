@@ -9,6 +9,15 @@ function Layout() {
             Nanyan Amber Jiang
           </Link>
           <nav className="flex items-center gap-[3vw] text-xs uppercase md:gap-[4vw] lg:gap-[40px] lg:pr-[64px] lg:text-sm -mt-[5px]">
+            <button
+              type="button"
+              className="font-rubik flex h-[23px] cursor-pointer items-center justify-center border-0 bg-transparent p-0 uppercase text-[#3b6fa8] transition-colors duration-200 hover:text-[#2d5f94]"
+              onClick={() => {
+                window.open('/NanyanJiang_Resume_2026.pdf', '_blank', 'noopener,noreferrer')
+              }}
+            >
+              View CV
+            </button>
             <NavLink
               to="/projects"
               className={({ isActive }) =>

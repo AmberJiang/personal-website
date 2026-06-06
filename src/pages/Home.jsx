@@ -1,4 +1,4 @@
-import '../App.css'
+import Skills from '../components/Skills.jsx'
 import Timeline from '../components/Timeline.jsx'
 
 function Home() {
@@ -20,17 +20,6 @@ function Home() {
               Off the clock, I love cats, design, swimming, piano, and side projects in code.
             </p>
           </div>
-          <button
-            type="button"
-            role="button"
-            className="button-27 mt-12 md:mt-14 lg:mt-16"
-            style={{ width: '90px', height: '21px', minHeight: '21px' }}
-            onClick={() => {
-              window.open('/NanyanJiang_Resume_2026.pdf', '_blank', 'noopener,noreferrer')
-            }}
-          >
-            View CV
-          </button>
         </div>
 
         <div className="w-full max-w-[240px] md:max-w-[260px] lg:w-[280px] lg:max-w-[280px] lg:shrink-0">
@@ -41,6 +30,8 @@ function Home() {
           />
         </div>
       </section>
+
+      <Skills />
 
       <Timeline />
 
