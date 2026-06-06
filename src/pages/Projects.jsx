@@ -1,5 +1,25 @@
 const projects = [
   {
+    name: 'Personal Website',
+    url: 'https://github.com/AmberJiang/personal-website',
+    intro:
+      'A minimal portfolio site with responsive layout, an animated career timeline, and dedicated project pages — it is this current website.',
+    sections: [
+      {
+        title: 'Responsive Layout',
+        body: 'Tuned for desktop, tablet, and mobile — consistent spacing and typography across breakpoints.',
+      },
+      {
+        title: 'Career Timeline',
+        body: 'Scroll-driven animations highlight work history, highlights, and project details along a vertical timeline.',
+      },
+      {
+        title: 'Project Pages',
+        body: 'Separate pages for shipped and in-progress side projects, each with focused descriptions and tech stacks.',
+      },
+    ],
+  },
+  {
     name: "What's For Lunch",
     url: 'https://github.com/AmberJiang/what-s-for-lunch',
     liveUrl: 'https://amberjiang.github.io/what-s-for-lunch/',
@@ -45,15 +65,19 @@ function Projects() {
                 {project.intro}
               </p>
 
-              <div className="mt-4 flex flex-col gap-6 md:mt-5 md:flex-row md:items-start md:gap-10 lg:gap-12">
-                <div className="aspect-[9/16] w-full shrink-0 overflow-hidden rounded-2xl border border-[#E5E7EB] bg-[#FCFCFA] sm:max-w-[360px] md:w-[52%] md:max-w-none lg:w-[560px] xl:w-[640px]">
-                  <iframe
-                    src={project.liveUrl}
-                    title={project.name}
-                    className="h-full w-full border-0"
-                    loading="lazy"
-                  />
-                </div>
+              <div
+                className={`mt-4 flex flex-col gap-6 md:mt-5${project.liveUrl ? ' md:flex-row md:items-start md:gap-10 lg:gap-12' : ''}`}
+              >
+                {project.liveUrl && (
+                  <div className="aspect-[9/16] w-full shrink-0 overflow-hidden rounded-2xl border border-[#E5E7EB] bg-[#FCFCFA] sm:max-w-[360px] md:w-[52%] md:max-w-none lg:w-[560px] xl:w-[640px]">
+                    <iframe
+                      src={project.liveUrl}
+                      title={project.name}
+                      className="h-full w-full border-0"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
 
                 <div className="flex min-w-0 flex-1 flex-col items-start gap-4 text-left md:gap-5">
                   {project.sections.map((section) => (

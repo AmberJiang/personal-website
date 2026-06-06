@@ -1,17 +1,5 @@
 const ongoingProjects = [
   {
-    name: 'Personal Website',
-    url: 'https://github.com/AmberJiang/personal-website',
-    intro:
-      'A minimal portfolio site — refining layout, timeline, and project pages as an ongoing side build.',
-    focus: [
-      'Responsive layout tuned for desktop, tablet, and mobile',
-      'Career timeline with scroll-driven animations',
-      'Dedicated pages for ongoing and shipped projects',
-    ],
-    techStack: 'React, Tailwind CSS, Vite',
-  },
-  {
     name: 'Repo Reader',
     intro:
       'A CLI mini-program for reading and exploring Git repositories — browse structure, files, and history without leaving the terminal.',
