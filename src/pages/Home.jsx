@@ -9,12 +9,17 @@ function Home() {
           <h2 className="font-serif text-lg font-semibold tracking-tight text-[#111827] md:text-xl lg:text-2xl">
             BIO
           </h2>
-          <p className="mt-[2vw] text-sm leading-[1.75] tracking-[0.02em] text-[#111827] md:mt-5 md:text-base">
-            Full-stack developer since 2019 — building products from interface to infrastructure.
-          </p>
-          <p className="mt-3 text-xs leading-[1.8] tracking-[0.03em] text-[#6B7280] md:mt-4 md:text-sm">
-            Off the clock, I love cats, design, swimming, piano, and side projects in code.
-          </p>
+          <div className="mt-[2vw] flex max-w-[360px] flex-col gap-3 md:mt-5 md:gap-4">
+            <p className="text-xs leading-relaxed tracking-[0.04em] text-[#374151] md:text-sm">
+              <span className="font-serif font-medium text-[#111827]">
+                Full-stack developer since 2019
+              </span>
+              {' — building products from interface to infrastructure.'}
+            </p>
+            <p className="text-xs leading-relaxed tracking-[0.04em] text-[#9CA3AF] md:text-sm">
+              Off the clock, I love cats, design, swimming, piano, and side projects in code.
+            </p>
+          </div>
           <button
             type="button"
             role="button"

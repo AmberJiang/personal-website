@@ -18,6 +18,14 @@ function Layout() {
               Projects
             </NavLink>
             <NavLink
+              to="/ongoing"
+              className={({ isActive }) =>
+                `link-hover link-hover--ink font-rubik h-[23px] min-w-[61px] flex items-center justify-center${isActive ? ' link-hover--active' : ''}`
+              }
+            >
+              Ongoing
+            </NavLink>
+            <NavLink
               to="/contact"
               className={({ isActive }) =>
                 `link-hover link-hover--ink font-rubik h-[23px] w-[61px] flex items-center justify-center${isActive ? ' link-hover--active' : ''}`
